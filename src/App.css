@@ -1,0 +1,239 @@
+@supports (-webkit-overflow-scrolling: touch) {
+    .selectLocation__container {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+.App {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+}
+.selectLocation__container {
+    align-items: center;
+    width: 100%;
+    background-color: #7483ff26;
+    padding-top: 25px;
+}
+.selectLocation__container-wrap {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.setLocation--displayData__container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+}
+.country__container,
+.city__container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.css-13cymwt-control,
+.css-3iigni-container,
+.css-t3ipsp-control {
+    margin: 10px;
+    width: 25vw;
+    min-width: 200px;
+}
+.css-13cymwt-control,
+.css-16xfy0z-control {
+    background: #dcdfff !important;
+}
+.css-t3ipsp-control {
+    background: #e7e8ff !important;
+}
+.displayData__container {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.displayData__container-content {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+}
+.displayData__container--stars {
+    position: absolute;
+    width: -webkit-fill-available;
+    height: 90%;
+    background: url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+    z-index: 0;
+    padding: 25px;
+}
+.displayData__container--currentWeather {
+    width: 100%;
+    z-index: 1;
+}
+.displayData__container--currentWeather-date {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 100;
+}
+.displayData__container--currentWeather-temperature {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+}
+.displayData__container--currentWeather-wind {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+}
+.displayData__container--currentWeather-sunrise {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    color: #f7ff00c4;
+}
+.displayData__container--currentWeather-sunset {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 200;
+    color: #ff7900c4;
+}
+.displayData__container--currentWeather-wrap {
+    font-size: 16px;
+    white-space: nowrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.displayData__container--currentWeather-wrap::-webkit-scrollbar,
+.displayData__container--dailyWeather::-webkit-scrollbar {
+    width: 0;
+}
+.displayData__container--currentWeatherData {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+}
+.displayData__container--label {
+    position: absolute;
+    font-size: 14px;
+    color: #000;
+    margin-top: -5px;
+    right: 50px;
+}
+.displayData__container--label.temperature {
+    margin-top: 45px;
+}
+.displayData__container--label.apparent_temperature {
+    margin-top: 95px;
+}
+.displayData__container--label.precipitation_probability {
+    margin-top: 145px;
+}
+.displayData__container--label.relativehumidity {
+    margin-top: 195px;
+}
+.displayData__container--currentWeatherData-item {
+    width: 50px;
+    text-align: center;
+}
+.displayData__container--currentWeatherData-selectItem {
+    width: 60px;
+    text-align: center;
+    background: #636abfd6;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.displayData__container--currentWeatherData-selectItem:hover {
+    scale: 1.1;
+}
+.displayData__container--currentWeatherData-selectItem.top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.displayData__container--currentWeatherData-selectItem.bottom {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.displayData__container--dailyWeather {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+    white-space: nowrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.displayData__container--dailyWeather-weekly {
+    margin-left: 20px;
+}
+.displayData__container--dailyWeather-wrap {
+    font-size: 16px;
+    white-space: nowrap;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    overflow-x: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.displayData__container--dailyWeather-item-wrap {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    flex-wrap: wrap;
+}
+.displayData__container--dailyWeather-item {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+.displayData__container--dailyWeather-item-p,
+.displayData__container--dailyWeather-item--time {
+    width: 110px;
+}
+.displayData__container--dailyWeather-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    margin-left: 20px;
+}
